@@ -1,13 +1,173 @@
 body {
+  width: 100%;
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  height: 6vh;
+  background-color: #FFF9EE;
+  border-bottom: 1px solid lightgray;
+  box-shadow: 0 5px 20px lightgray;
+  margin-left: 5px;
+}
+
+.search {
+  height: 93.5vh;
+  overflow-y: scroll;
+  float: left;
+  border-right: 1px solid lightgray;
+  position: relative;
+  width: 25%;
+}
+
+.search::-webkit-scrollbar {
+  display: none;
+}
+
+.result {
+  height: 20vh;
+  background-color: whitesmoke;
+  float: left;
+  width: 74.9%;
+  overflow-x: scroll;
+}
+
+.result::-webkit-scrollbar {
+  display: none;
+}
+
+.map {
+  height: 73.5vh;
+  float: left;
+  width: 74.8%;
+  border: 1px solid lightgray;
+}
+
+.logo {
+  margin-left: 0.3%;
+  margin-top: 0.6%;
+  margin-right: 0.5%;
+  width: 2.5%;
+  height: 70%;
+}
+
+.titleStyle {
+  color: orangered;
+  font-size: 34px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin-bottom: 20%;
+  vertical-align: 10%;
+}
+
+.lanStyle {
+  border-radius: 2px;
+  margin: 2px;
+  position: absolute;
+  top: 1.5%;
+  font-size: 15px;
+  text-decoration: underline;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+.cityStyle {
+  position: absolute;
+  width: 10%;
+  font-size: 18px;
+  top: 1.5%;
+  right: 7%;
+  border-radius: 5px;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+.resultsNumber {
+  margin-left: 5%;
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+.matched {
+  color: darkgray;
+  font-size: 22px;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+.clear {
+  float: right;
+  margin-top: 1%;
+  margin-right: 4%;
+  margin-bottom: 2%;
+  color: cornflowerblue;
+  font-size: 16px;
+  text-decoration: underline;
+  background: none;
+  border: none;
+}
+
+.checkbox_clear {
+  float: left;
+  margin-left: 5%;
+  margin-top: 1.2%;
+}
+
+.option_clear {
+  float: left;
+}
+
+.section_name {
+  color: darkorange;
+  float: left;
+  margin-left: 5%;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+.hide {
+  float: right;
+  margin-right: 5%;
+  margin-top: 1%;
+  width: 5%;
+  height: 5%;
+}
+
+.section {
+  display: none;
+}
+
+.checkbox {
+  margin-left: 5%;
+  margin-top: 4%;
+}
+
+.option {
+  margin-left: 1%;
+  font-size: 18px;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+.separator {
+  left: 5%;
+  width: 90%;
+  border-top: 1px solid whitesmoke;
+}
+
+.left {
+  float: left;
+  margin-left: 3%;
+  width: 40%;
+}
+
+.right {
+  margin-right: 17%;
+  float: right;
+  width: 40%;
+}
+
+.table {
+  border: 1px solid black;
 }
